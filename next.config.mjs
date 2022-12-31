@@ -4,8 +4,8 @@
  * This is especially useful for Docker builds.
  */
 !process.env.SKIP_ENV_VALIDATION && (await import("./src/env/server.mjs"));
+import withPwa from "next-pwa";
 
-/** @type {import("next").NextConfig} */
 const config = {
   reactStrictMode: true,
   swcMinify: true,
@@ -14,4 +14,9 @@ const config = {
     defaultLocale: "en",
   },
 };
-export default config;
+
+export default withPwa({
+  dest: "public",
+  disable: process.env.NODE_ENV === "development",
+  register: true,
+})(config);
