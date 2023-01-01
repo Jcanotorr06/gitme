@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.chart {
+    @apply bg-slate-800 border border-slate-500 p-8 rounded-md shadow-md;
+    max-width: 500px;
+}
+
+.chart header h2 {
+    @apply text-slate-100 text-2xl font-semibold underline decoration-dashed;
+}
+
+.chart header p, canvas {
+    @apply text-slate-400;
+}
