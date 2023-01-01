@@ -2,6 +2,7 @@ import type { DefaultSeoProps } from "next-seo"
 
 const defaultSeoProps: DefaultSeoProps = {
     title: "GitMe - Get a better view of your GitHub profile",
+    titleTemplate: "GitMe | %s",
     description: "GitMe is a web app that helps you get a better view of your GitHub profile.",
     openGraph: {
         type: "website",

@@ -74,12 +74,6 @@ const User:NextPage = () => {
       <NextSeo
         title={data?.name || data?.login || "User"}
         description={data?.bio || "No bio provided"}
-        additionalLinkTags={[
-          {
-            rel: "stylesheet",
-            href:"https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-          }
-        ]}
       />
       {
         isLoading ? (
