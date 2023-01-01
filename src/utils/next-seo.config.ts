@@ -7,13 +7,20 @@ const defaultSeoProps: DefaultSeoProps = {
     openGraph: {
         type: "website",
         locale: "en_IE",
-        url: "https://gitme.vercel.app/",
+        url: "https://gitme.josephcano.com/",
         site_name: "GitMe",
-        images: [],
+        images: [
+            {
+                url: "https://raw.githubusercontent.com/Jcanotorr06/images/main/gitme_og.PNG",
+                width: 1200,
+                height: 630,
+                alt: "GitMe",
+            }
+        ],
     },
     twitter: {
         handle: "@spoofy507",
-        site: "@spoofy507",
+        site: "https://gitme.josephcano.com",
         cardType: "summary_large_image",
     },
     additionalLinkTags: [
