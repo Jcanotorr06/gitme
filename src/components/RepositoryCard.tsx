@@ -51,24 +51,18 @@ const RepositoryCard:FC<Props> = (props:Props) => {
                     </p>
                 </div>
             }
-            {
-                repo.stars &&
                 <div className="flex flex-row gap-2 items-center text-xs">
                     <GoStar />
                     <p className="text-slate-400">
-                    {repo.stars}
+                    {repo.stars || 0}
                     </p>
                 </div>
-            }
-            {
-                repo.forks &&
                 <div className="flex flex-row gap-2 items-center text-xs">
                     <GoGitBranch />
                     <p className="text-slate-400">
-                    {repo.forks}
+                    {repo.forks || 0}
                     </p>
                 </div>
-            }
             </div>
         </motion.div>
     )
